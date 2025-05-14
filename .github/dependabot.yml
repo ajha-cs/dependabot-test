@@ -3,7 +3,7 @@ version: 2
 registries:
   cloudsmith:
     type: maven-repository
-    url: https://dl.cloudsmith.io/basic/gharepo/maven/
+    url: https://dl.cloudsmith.io/basic/orgcs/gharepo/maven/
     username: ${{ secrets.CLOUDSMITH_DEPENDABOT_USER }}
     password: ${{ secrets.CLOUDSMITH_DEPENDABOT_API_KEY }}
     replaces-base: true

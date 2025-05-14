@@ -79,49 +79,5 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- Additional Dependencies -->
-        <!-- Hibernate ORM -->
-    <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>5.6.10.Final</version> <!-- Older version; latest is 6.x -->
-    </dependency>
-    <!-- Apache Commons Logging -->
-    <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.2</version> <!-- Older version; latest is 1.3.x -->
-    </dependency>
-    <!-- SLF4J API -->
-    <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.7.36</version> <!-- Older version; latest is 2.x -->
-    </dependency>
-    <!-- Logback Classic (SLF4J Implementation) -->
-    <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>1.2.11</version> <!-- Older version; latest is 1.4.x -->
-    </dependency>
-    <!-- Spring Data JPA -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-data-jpa</artifactId>
-        <version>2.7.5</version> <!-- Matches parent -->
-    </dependency>
-    <!-- H2 Database (for testing) -->
-    <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <version>1.4.200</version> <!-- Older version; latest is 2.x -->
-        <scope>test</scope>
-    </dependency>
-    <!-- Apache Commons Lang -->
-    <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>3.11</version> <!-- Older version; latest is 3.12.x -->
-    </dependency>
   </dependencies>
 </project>
