@@ -3,7 +3,7 @@ version: 2
 registries:
   cloudsmith:
     type: maven-repository
-    url: https://dl.cloudsmith.io/basic/orgcs/gharepo/maven/
+    url: https://dl.cloudsmith.io/basic/gharepo/maven/
     username: ${{ secrets.CLOUDSMITH_DEPENDABOT_USER }}
     password: ${{ secrets.CLOUDSMITH_DEPENDABOT_API_KEY }}
     replaces-base: true
@@ -22,4 +22,4 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 30
