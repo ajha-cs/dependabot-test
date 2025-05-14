@@ -4,7 +4,7 @@ registries:
   cloudsmith:
     type: maven-repository
     url: https://dl.cloudsmith.io/basic/orgcs/gharepo/maven/
-    username: ${{ vars.CLOUDSMITH_DEPENDABOT_USER }}
+    username: ${{ secrets.CLOUDSMITH_DEPENDABOT_USER }}
     password: ${{ secrets.CLOUDSMITH_DEPENDABOT_API_KEY }}
     replaces-base: true
 
@@ -15,8 +15,7 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "maven"
-    registries:
-      - cloudsmith
+    registries: "*"
     directory: "/"
     schedule:
       interval: "daily"
