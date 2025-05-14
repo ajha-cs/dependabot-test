@@ -1,0 +1,26 @@
+version: 2
+
+registries:
+  cloudsmith:
+    type: maven-repository
+    url: https://dl.cloudsmith.io/basic/orgcs/mvnrepo/maven/
+    username: ${{ vars.CLOUDSMITH_DEPENDABOT_USER }}
+    password: ${{ secrets.CLOUDSMITH_DEPENDABOT_API_KEY }}
+    replaces-base: true
+
+updates:
+  - package-ecosystem: "maven"
+    registries:
+      - cloudsmith
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "build(deps) :arrow_up:"
+      prefix-development: "build(deps-dev) :arrow_up:"
+    labels:
+      - "dependencies"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    open-pull-requests-limit: 10
