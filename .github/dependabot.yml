@@ -9,6 +9,11 @@ registries:
     replaces-base: true
 
 updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "daily"
+
   - package-ecosystem: "maven"
     registries:
       - cloudsmith
