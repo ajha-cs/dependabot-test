@@ -16,7 +16,7 @@ updates:
 
   - package-ecosystem: "maven"
     registries: "*"
-    directory: "/"
+    directory: "/my-app"
     schedule:
       interval: "daily"
     commit-message:
