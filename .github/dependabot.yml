@@ -9,11 +9,6 @@ registries:
     replaces-base: true
 
 updates:
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
   - package-ecosystem: "maven"
     registries: "*"
     directory: "/my-app"
