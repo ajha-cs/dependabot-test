@@ -23,10 +23,10 @@
   </repositories>
   <dependencies>
     <dependency>
-    <groupId>io.cloudsmith.maven.ex</groupId>
-    <artifactId>mvnpkg</artifactId>
-    <version>11.0.0</version>
-  </dependency>
+      <groupId>io.cloudsmith.maven.ex</groupId>
+      <artifactId>mvnpkgpull</artifactId>
+      <version>8.0.0-20250410.093932-1</version>
+    </dependency>
     <dependency>
         <groupId>io.micrometer</groupId>
         <artifactId>micrometer-core</artifactId>
