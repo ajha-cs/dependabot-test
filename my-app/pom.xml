@@ -24,8 +24,8 @@
   <dependencies>
     <dependency>
       <groupId>io.cloudsmith.maven.ex</groupId>
-      <artifactId>mvnpkgpull</artifactId>
-      <version>8.0.0-20250410.093932-1</version>
+      <artifactId>mvnpkg</artifactId>
+      <version>13.0.0-alpha</version>
     </dependency>
     <dependency>
         <groupId>io.micrometer</groupId>
