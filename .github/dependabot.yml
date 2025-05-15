@@ -19,7 +19,7 @@ updates:
       prefix-development: "build(deps-dev) :arrow_up:"
     labels:
       - "dependencies"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+    # ignore:
+    #   - dependency-name: "*"
+    #     update-types: ["version-update:semver-major"]
     open-pull-requests-limit: 30
